@@ -42,7 +42,7 @@ void loop() //30min的行为
 
     Serial.println(current);
     
-    if(current-previous>=10*1000)      //下一次喝水超过了30s
+    if(current-previous>=30*60*1000)      //下一次喝水超过了30min
       {
         previous=current;
         mp3_play (5);
